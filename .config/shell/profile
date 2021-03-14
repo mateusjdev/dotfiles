@@ -4,7 +4,7 @@ export PATH=$PATH:/snap/bin:$HOME/.local/bin
 
 # Default programs
 export EDITOR="vim"
-export TERMINAL="st"
+export TERMINAL="terminte"
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"
