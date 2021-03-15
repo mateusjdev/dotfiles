@@ -39,6 +39,11 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
+# Fix some other keys
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char
+
 # Change cursor shape for different vi modes.
 function zle-keymap-select () {
     case $KEYMAP in

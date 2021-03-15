@@ -3,7 +3,7 @@
 export PATH=$PATH:/snap/bin:$HOME/.local/bin
 
 # Default programs
-export EDITOR="vim"
+export EDITOR="nvim"
 export TERMINAL="terminte"
 
 # ~/ Clean-up:
@@ -14,8 +14,6 @@ export XINITRC="$XDG_CONFIG_HOME/x11/xinitrc"
 export ANDROID_SDK_HOME="$XDG_CONFIG_HOME/android"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
-
-export VIMINIT="source $XDG_CONFIG_HOME/vim/vimrc"
 
 #export LESS=-R
 #export LESS_TERMCAP_mb="$(printf '%b' '[1;31m')"
