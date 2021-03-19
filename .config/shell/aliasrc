@@ -4,7 +4,7 @@
 [ -f "$XINITRC" ] && alias startx="startx $XINITRC"
 
 # sudo not required for some system commands
-for x in mount umount sv pacman updatedb su ; do
+for x in mount umount sv pacman updatedb su apt ; do
 	alias $x="sudo $x"
 done
 
@@ -13,7 +13,6 @@ alias \
 	cp="cp -iv" \
 	mv="mv -iv" \
 	rm="rm -vI" \
-	bc="bc -ql" \
 	mkd="mkdir -pv" \
 	yt="youtube-dl --add-metadata -i" \
 	yta="yt -x -f bestaudio/best" \
@@ -24,7 +23,6 @@ alias \
 	ls="ls -hN --color=auto --group-directories-first" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
-	ccat="highlight --out-format=ansi"
 
 # These common commands are just too long! Abbreviate them.
 alias \
@@ -32,20 +30,7 @@ alias \
 	g="git" \
 	gh="cd && clear" \
 	la="ls -lahN --color=auto --group-directories-first" \
-	shut="sudo shutdown now" \
-	tracert="traceroute"
-	trem="transmission-remote" \
-	YT="youtube-viewer" \
+	tracert="traceroute" \
 	sdn="sudo shutdown -h now" \
-	e="$EDITOR" \
 	v="$EDITOR" \
-	p="sudo pacman" \
-	xi="sudo xbps-install" \
-	xr="sudo xbps-remove -R" \
-	xq="xbps-query" \
-	z="zathura"
-
-#alias \
-#	magit="nvim -c MagitOnly" \
-#	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" \
-#	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
+	p="sudo pacman"
