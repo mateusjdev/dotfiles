@@ -1,7 +1,5 @@
 # Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
-
-#[mateusjdev@fry /home/mateusjdev ]$
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
@@ -9,7 +7,6 @@ setopt interactive_comments
 
 zstyle ':completion:*' completer _complete _ignored
 zstyle ':completion:*' max-errors 2
-zstyle :compinstall filename '/home/mateusjdev/.zshrc'
 
 # History in cache directory:
 HISTSIZE=10000000
@@ -78,11 +75,12 @@ lfcd () {
         [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
     fi
 }
+
 bindkey -s '^o' 'lfcd\n'
 
-bindkey -s '^a' 'bc -lq\n'
+# bindkey -s '^a' 'bc -lq\n'
 
-bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
+# bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
 
 bindkey '^[[P' delete-char
 
