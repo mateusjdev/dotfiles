@@ -39,11 +39,14 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
-# Fix some other keys
+# Fix Home, End & Delete
 bindkey  "^[[H"   beginning-of-line
 bindkey  "^[[F"   end-of-line
 bindkey  "^[[3~"  delete-char
 
+# Fix Home & End  (Win 10)
+bindkey "^[[1~" beginning-of-line
+bindkey "^[[4~" end-of-line
 
 # History search
 autoload -U history-search-end
