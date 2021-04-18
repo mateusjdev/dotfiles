@@ -4,6 +4,13 @@ export PATH=$PATH:/snap/bin:$HOME/.local/bin
 
 # Default programs
 export EDITOR="nvim"
+export TERMINAL="termite"
+export BROWSER="brave"
+
+# clipmenu
+export CM_OWN_CLIPBOARD=1
+export CM_SELECTIONS="clipboard" 
+export CM_MAX_CLIPS=10
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -15,8 +22,4 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"
 export LESSHISTFILE=-
-
-if [ "$TERM" = xterm ]; then 
-    TERM=xterm-256color;
-fi
 export TERM=xterm-256color
