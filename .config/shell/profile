@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-export PATH=$PATH:/snap/bin:$HOME/.local/bin
+export PATH=$PATH:/snap/bin:$HOME/.local/bin:$HOME/docs/scripts
 
 # Default programs
 export EDITOR="nvim"
