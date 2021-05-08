@@ -4,8 +4,7 @@ export PATH=$PATH:/snap/bin:$HOME/.local/bin:$HOME/docs/scripts
 
 # Default programs
 export EDITOR="nvim"
-export TERMINAL="termite"
-export BROWSER="brave"
+export TERMINAL="alacritty"
 
 # clipmenu
 export CM_OWN_CLIPBOARD=1
