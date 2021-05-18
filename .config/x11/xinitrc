@@ -1,7 +1,6 @@
 zsh docs/scripts/sensitivity.sh &
 dwmblocks &
 xcompmgr &
-imwhell &
 clipmenud &
 exec /usr/lib/kdeconnectd &
 [ -e /home/mateusjdev/images/bg.jpg ] && feh --bg-scale /home/mateusjdev/images/bg.jpg &
