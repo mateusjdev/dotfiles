@@ -44,10 +44,6 @@ bindkey  "^[[H"   beginning-of-line
 bindkey  "^[[F"   end-of-line
 bindkey  "^[[3~"  delete-char
 
-# Fix Home & End  (Win 10)
-bindkey "^[[1~" beginning-of-line
-bindkey "^[[4~" end-of-line
-
 # History search
 autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
