@@ -48,6 +48,10 @@ bindkey  "^[[3~"  delete-char
 bindkey "^[[1~" beginning-of-line
 bindkey "^[[4~" end-of-line
 
+# Fix ctrl+</>
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
 # History search
 autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
