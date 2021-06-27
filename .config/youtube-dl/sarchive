@@ -1,0 +1,11 @@
+# Filesystem
+--write-annotations
+--write-description
+
+# Video format
+--format bestvideo+bestaudio/best
+--merge-output-format mkv
+
+# Post-processing
+--add-metadata
+--embed-subs
