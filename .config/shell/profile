@@ -1,15 +1,10 @@
 #!/bin/zsh
 
-export PATH=$PATH:$HOME/.local/bin:$HOME/docs/scripts
+export PATH=$PATH:$HOME/.local/bin:$HOME/docs/scripts:$HOME/.local/bin/blocks
 
 # Default programs
 export EDITOR="nvim"
 export TERMINAL="alacritty"
-
-# clipmenu
-export CM_OWN_CLIPBOARD=1
-export CM_SELECTIONS="clipboard" 
-export CM_MAX_CLIPS=10
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"

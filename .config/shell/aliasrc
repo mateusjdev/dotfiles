@@ -28,7 +28,7 @@ alias \
 alias \
 	ka="killall" \
 	g="git" \
-	gh="cd && clear" \
+	gh="cd ~/home && clear" \
 	la="ls -lahN --color=auto --group-directories-first" \
 	tracert="traceroute" \
 	sdn="sudo shutdown -h now" \
